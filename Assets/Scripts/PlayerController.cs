@@ -84,10 +84,10 @@ public class PlayerController : MonoBehaviour
         //part of movement
         controller.Move(direction * Time.deltaTime);
 
-        //to help keep z at 0
-        if(transform.position.z != 0)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
-        }
+        ////to help keep z at 0
+        //if(transform.position.z != 0)
+        //{
+        //    transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        //}
     }
 }
