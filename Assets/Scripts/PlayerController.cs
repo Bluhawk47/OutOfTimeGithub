@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    public Animator playerAnimator;
+
     //this variable will be ignored for some reason if created under 'CharacterController'
     private float gravity = -20;
     
@@ -60,6 +62,7 @@ public class PlayerController : MonoBehaviour
             //when player presses space bar
             if (Input.GetButtonDown("Jump"))
             {
+                playerAnimator.SetTrigger("jump");
                 //jump
                 direction.y = jumpHight;
             }
@@ -82,6 +85,7 @@ public class PlayerController : MonoBehaviour
 
 
         //part of movement
+        playerAnimator.SetBool("isMoving",  direction.x != 0);
         controller.Move(direction * Time.deltaTime);
 
         ////to help keep z at 0

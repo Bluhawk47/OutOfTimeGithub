@@ -27196,6 +27196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facb6c578d8ba224486e560c93c96acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 1332757107}
   controller: {fileID: 470384117}
   groundCheck: {fileID: 753390298}
   groundLayer:
@@ -53343,7 +53344,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.0313653, y: 1}
+    m_SensorSize: {x: 1.7772512, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -65568,6 +65569,12 @@ Transform:
   m_Father: {fileID: 938301133}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1332757107 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 903a1af77db4dde48be505777f09ea0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 549093216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1335833785
 GameObject:
   m_ObjectHideFlags: 0
